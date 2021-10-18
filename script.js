@@ -1,4 +1,4 @@
-const expectedOrigin = "https://livearea-pilot-approuter-caas2-sap.cfapps.us10.hana.ondemand.com/";
+const expectedOrigin = "https://livearea-pilot-approuter-caas2-sap.cfapps.us10.hana.ondemand.com";
 
 const script = [];
 
