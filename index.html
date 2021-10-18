@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Navigation</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js" type="text/javascript" async=""></script>
+    <script type="text/javascript">
+        WebFontConfig = {
+            google: { families: [
+                    'Roboto Condensed:100,200,300,400,500,600,700,800,900',
+                    'Roboto Condensed:100,200,300,400,500,600,700,800,900',
+                    'Roboto Condensed:100,200,300,400,500,600,700,800,900'] }
+        };
+        (function() {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
+
+</head>
+<body>
+    <header class="clearfix">
+        <div class="contain">
+            <!--<a class="logo pull-left" href="#">LOGO</a>-->
+            <nav class="pull-right " id="nav"></nav>
+        </div>
+    </header>
+
+    <!-- Outer -->
+    <script type="text/template" id="outerTemplate">
+        {{> innerTemplate}}
+    </script>
+    <script type="text/template" id="innerTemplate">
+        {{#content}}
+        <div data-section-id="16173320280a632935" data-section-type="section-blog-v1" style="  ">
+            <div class="section-blog-v1 ">
+                <div class="">
+                    <div class=" content-blog-v1">
+                        <div class="">
+                            <div class="content-section-blog-v1">
+                                <div class="picrure">
+                                    <a href="/blogs/news/warm-cycling-jackets-guide" class="image_url">
+                                        <img data-src="//cdn.shopify.com/s/files/1/0579/0760/9755/articles/blog6_1024x1024.jpg?v=1625544528" alt="Warm Cycling Jackets Guide" class="img-fluid lazyloaded" src="//cdn.shopify.com/s/files/1/0579/0760/9755/articles/blog6_1024x1024.jpg?v=1625544528">
+                                    </a>
+                                    <div class="date">
+                                        <span class="day">{{date}}</span>
+                                        <span class="month">{{month}}</span>
+                                    </div>
+                                </div>
+                                <div class="info_blog">
+                                    <a class="blog_cate" href="/blogs/news">{{name}}</a>
+                                    <h4 class="title-blog"><a href="{{link}}">Warm Cycling Jackets Guide</a></h4>
+                                    {{{text}}}
+                                    <p class="content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed molestie nunc. In a urna sed lorem posuere pretium. Etiam tempus et eros et elementum. Praesent sed nisl elit. Nunc non leo...
+                                    </p>
+                                    <div class="btn_readmore">
+                                        <a class="" href="/blogs/news/warm-cycling-jackets-guide">Readmore<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/content}}
+    </script>
+    <script src="js/jQuery-2.1.4.min.js"></script>
+    <script src="js/mustache.min.js"></script>
+    <script src="js/drystone.js"></script>
+    <script src="js/header.js"></script>
+    <script type="module" src="js/customScript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
+    <!-- (check => level3 childs){
+
+        1. get total count of level3 childs
+        2. create 4 containers with 25% width of parent and loop the total no. of childs inside 4 of it 1 by 1
+        3. 
+
+
+        (goto => its parent level)
+    } -->
+
+</body>
+</html>
