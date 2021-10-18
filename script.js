@@ -1,13 +1,13 @@
 const expectedOrigin = "https://livearea-pilot-approuter-caas2-sap.cfapps.us10.hana.ondemand.com/";
 
-const events = [];
+const script = [];
 
 window.addEventListener(
     "message",
     event => {
         if(event.origin === expectedOrigin) {
-            events.push(event.data);
-            document.getElementById("eventPrintout").innerHTML = JSON.stringify(events, null, 4);
+            script.push(event.data);
+            document.getElementById("eventPrintout").innerHTML = JSON.stringify(script, null, 4);
         }
     },
     false
