@@ -8,6 +8,16 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1zS0jMQbWRRAP2R8qCekatxruZ9" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -52,7 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1634126315912</updated>
       <workItem from="1634126320419" duration="6089000" />
-      <workItem from="1634532388439" duration="15474000" />
+      <workItem from="1634532388439" duration="15970000" />
     </task>
     <servers />
   </component>
