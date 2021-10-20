@@ -41,3 +41,13 @@ function sendMessage(event) {
         console.log('no send method detected');
     }
 }
+
+function articleClick(articleId) {
+    console.log(articleId);
+    let navEvent = {
+        type: 'navigate',
+        data:
+            { link: '/en-US/browse/' + articleId }
+    };
+    this.sendMessage(navEvent);
+}

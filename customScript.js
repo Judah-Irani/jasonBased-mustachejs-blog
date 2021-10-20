@@ -24,9 +24,11 @@ function fixThis(data) {
     delete data.page;
     delete data.links;
     data.content = data.content.filter(val => val.type == 'ARTICLE');
-    let date = new Date(data.content[0].createdAt);
-    data.content[0].date = date.getDate();
-    data.content[0].month = date.toDateString().substr(4, 3);
+    data.content.forEach(vx => {
+        let date = new Date(vx.createdAt);
+        vx.date = date.getDate();
+        vx.month = date.toDateString().substr(4, 3);
+    });
     console.log(data);
     setParentData(data);
 
